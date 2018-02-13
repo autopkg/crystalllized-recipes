@@ -2,34 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Description</key>
-    <string>Downloads latest Google Drive File Stream disk image.</string>
-    <key>Identifier</key>
-    <string>com.github.crystallized.download.googledrivefs</string>
-    <key>Input</key>
-    <dict>
-        <key>NAME</key>
-        <string>GoogleDriveFileStream</string>
-        <key>DOWNLOAD_URL</key>
-        <string>https://dl.google.com/drive-file-stream/googledrivefilestream.dmg</string>
-    </dict>
-    <key>Process</key>
-    <array>
-        <dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>url</key>
-                <string>%DOWNLOAD_URL%</string>
-                <key>filename</key>
-                <string>%NAME%.dmg</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>EndOfCheckPhase</string>
-        </dict>
-    </array>
+	<key>Description</key>
+	<string>Downloads latest Google Drive File Stream disk image.</string>
+	<key>Identifier</key>
+	<string>com.github.crystallized.download.googledrivefs</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>GoogleDriveFileStream</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://dl.google.com/drive-file-stream/googledrivefilestream.dmg</string>
+	</dict>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+			<key>Arguments</key>
+			<dict>
+				<key>url</key>
+				<string>%DOWNLOAD_URL%</string>
+				<key>filename</key>
+				<string>%NAME%.dmg</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+	</array>
 </dict>
 </plist>

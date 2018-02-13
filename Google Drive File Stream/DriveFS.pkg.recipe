@@ -2,20 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Description</key>
-    <string>Downloads the current release of Google Drive File Stream and builds a package.</string>
-    <key>Identifier</key>
-    <string>com.github.crystalllized.pkg.googledrivefs</string>
-    <key>Input</key>
-    <dict>
-        <key>NAME</key>
-        <string>Google Drive File Stream</string>
-    </dict>
-    <key>ParentRecipe</key>
-    <string>com.github.crystallized.download.googledrivefs</string>
-    <key>Process</key>
-    <array>
-        <dict>
+	<key>Description</key>
+	<string>Downloads the current release of Google Drive File Stream and builds a package.</string>
+	<key>Identifier</key>
+	<string>com.github.crystalllized.pkg.googledrivefs</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Google Drive File Stream</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.crystallized.download.googledrivefs</string>
+	<key>Process</key>
+	<array>
+		<dict>
 			<key>Processor</key>
 			<string>FlatPkgUnpacker</string>
 			<key>Arguments</key>
@@ -57,8 +57,8 @@
 			<string>PkgCopier</string>
 			<key>Arguments</key>
 			<dict>
-                <key>source_pkg</key>
-                <string>%RECIPE_CACHE_DIR%/downloads/%filename%/GoogleDriveFileStream.pkg</string>
+				<key>source_pkg</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/%filename%/GoogleDriveFileStream.pkg</string>
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
 			</dict>
@@ -74,6 +74,6 @@
 				</array>
 			</dict>
 		</dict>	
-    </array>
+	</array>
 </dict>
 </plist>
