@@ -17,15 +17,13 @@
 from __future__ import absolute_import
 
 import json
-import re
-import urllib2
 
 from autopkglib import Processor, ProcessorError
 
 try:
-    from urllib import request as urllib  # For Python 3
+    from urllib.request import urlopen  # For Python 3
 except ImportError:
-    import urllib  # For Python 2
+    from urllib2 import urlopen  # For Python 2
 
 
 __all__ = ["JetbrainsURLProvider"]
@@ -118,10 +116,9 @@ class JetbrainsURLProvider(Processor):
     def xhr_release_info(self, product_code):
         """Request release information from JetBrains XHR Endpoint"""
         url = RELEASE_XHR_ENDPOINT.format(product_code, "123123123")
-        request = urllib2.Request(url)
 
         try:
-            handle = urllib2.urlopen(request)
+            handle = urlopen(url)
             response = handle.read()
             handle.close()
         except BaseException as e:
