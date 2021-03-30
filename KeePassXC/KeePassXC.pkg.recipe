@@ -10,8 +10,6 @@
 	<string>com.github.crystalllized.pkg.KeePassXC</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>org.keepassx.keepassxc</string>
 		<key>NAME</key>
 		<string>KeePassXC</string>
 	</dict>

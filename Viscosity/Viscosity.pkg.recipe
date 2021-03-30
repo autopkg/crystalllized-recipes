@@ -10,8 +10,6 @@
 	<string>com.github.crystalllized.pkg.Viscosity</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>com.viscosityvpn.Viscosity</string>
 		<key>NAME</key>
 		<string>Viscosity</string>
 	</dict>

@@ -10,8 +10,6 @@
 	<string>com.github.crystalllized.pkg.Keybase</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>keybase.Electron</string>
 		<key>NAME</key>
 		<string>Keybase</string>
 	</dict>

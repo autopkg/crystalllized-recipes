@@ -8,8 +8,6 @@
 	<string>com.github.crystalllized.pkg.LuaMessenger</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>com.getlua.lua</string>
 		<key>NAME</key>
 		<string>Lua</string>
 	</dict>
